@@ -28,8 +28,8 @@ public class Main {
         try{
             return breedFetcher.getSubBreeds(breed).size();
         }
-        catch (Exception e){
-            return -1;
+        catch (BreedFetcher.BreedNotFoundException e) {
+            return 0;
         }
     }
 }
